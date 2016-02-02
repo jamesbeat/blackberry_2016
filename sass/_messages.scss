@@ -1,0 +1,24 @@
+.alert{}
+.alert-block{ 
+	border: none;
+	position: relative;
+	ul{ margin-bottom: 0px;	}
+}
+
+a.close{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: block;
+	padding:15px;
+}
+
+.alert-status	{	@include alert($bb_olive);}
+.alert-success	{	@include alert($bb_olive);}
+.alert-info		{	@include alert($bb_teal);}
+.alert-warning	{	@include alert($bb_yellow);}
+.alert-error  	{	@include alert($bb_red);}
+.alert-danger	{	@include alert($bb_red);}
+
+
+

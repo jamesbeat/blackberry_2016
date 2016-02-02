@@ -1,0 +1,39 @@
+table{
+	
+	th{ font-family:$medFont; font-weight: normal; font-size: 0.9em; }
+	td{ font-size: 0.9em; }
+}
+
+.stacktable { width: 100%; position: relative; }
+.st-head-row { padding-top: 1em;   }
+.st-head-row.st-head-row-main { font-size: 1.5em; padding-top: 0; border: none !important;}
+.st-key { width: 48%; text-align:right; padding-right: 1%; border-color: transparent !important; }
+.st-val { width: 48%; padding-left: 1%; border-color: transparent !important; }
+
+.view-termine .views-table.small-only{
+	
+	td{
+		padding: 0px 8px !important;
+		vertical-align: middle;
+	}
+	
+	td.register-button{
+		padding-bottom: 10px !important;
+		padding-top: 10px !important;
+		vertical-align: middle;
+
+	}
+		
+	
+}
+
+/* RESPONSIVE EXAMPLE */
+
+.stacktable.large-only { display: table; }
+.stacktable.small-only { display: none; }
+
+@include respond-to(xs) { 
+	.stacktable.large-only { display: none; }
+	.stacktable.small-only { display: table; }
+}
+

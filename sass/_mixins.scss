@@ -1,0 +1,82 @@
+@mixin respond-to($media) {
+    /* Landscape phones and down */
+    @if $media == xs {
+        @media (max-width: $screen-xs-max) { @content; }
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == sm {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { @content; }
+    }
+    /* Desktop */
+    @else if $media == md {
+        @media (min-width: $screen-md-min) and (max-width: $screen-md_max) { @content; }
+    }
+    /* Large desktop */
+    @else if $media == lg {
+        @media (min-width: $screen-lg-min) { @content; }
+    }
+}
+
+
+
+%fully {
+	position: relative;
+	
+	
+	&:before, &:after{
+		content: "";
+		position: absolute;
+		z-index: 4;
+		background: #fff;  /* Match the background */
+		top: 0;
+		bottom: 0;
+		width: 9999px; 
+	}
+	
+	&:before{
+		right: 100%;
+		
+	}
+	&:after{
+		left: 100%;
+		
+	}
+	
+}
+
+@mixin fully($bg_color:#ffffff,$txt_color:#000000,$padding:40px){
+	
+	@extend %fully;
+	color: $txt_color;
+	background: $bg_color;
+	padding-top: $padding;
+	padding-bottom: $padding;
+	&:before, &:after { background: $bg_color; }
+
+	
+}
+
+@mixin alert($color){
+	
+	background-color: lighten($color, 25%);
+	border-bottom: none;
+	color: darken($color, 25%);
+	a{
+		color: darken($color, 25%);
+		&:hover{ color: darken($color, 50%)};
+	}
+	
+}
+
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+

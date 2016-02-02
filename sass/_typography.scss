@@ -1,0 +1,140 @@
+//ENGRAVERS
+@include font-face("Engravers", font-files("engravers-gothic/EngraversGothicW01-Regular.ttf", "engravers-gothic/EngraversGothicW01-Regular.eot", "engravers-gothic/EngraversGothicW01-Regular.woff", "engravers-gothic/EngraversGothicW01-Regular.svg"));
+
+//NEWS
+@include font-face("News Gothic", font-files("news-gothic/NewsGothicMTW01.ttf", "news-gothic/NewsGothicMTW01.eot", "news-gothic/NewsGothicMTW01.woff", "news-gothic/NewsGothicMTW01.svg"));
+@include font-face("News Gothic Italic", font-files("news-gothic/NewsGothicMTW01-Italic.ttf", "news-gothic/NewsGothicMTW01-Italic.eot", "news-gothic/NewsGothicMTW01-Italic.woff", "news-gothic/NewsGothicMTW01-Italic.svg"));
+
+
+//Libre Baskerville
+@include font-face("Libre Baskerville", font-files("libre-baskerville/libre-baskerville.ttf", "libre-baskerville/libre-baskerville.eot", "libre-baskerville/libre-baskerville.woff", "libre-baskerville/libre-baskerville.svg"));
+@include font-face("Libre Baskerville Italic", font-files("libre-baskerville/libre-baskerville-italic.ttf", "libre-baskerville/libre-baskerville-italic.eot", "libre-baskerville/libre-baskerville-italic.woff", "libre-baskerville/libre-baskerville-italic.svg"));
+
+
+$baseFont:'News Gothic', Arial, sans-serif;	// default fonts;
+$medFont: 'News Gothic', Arial, sans-serif;	// default fonts;
+$boldFont: 'News Gothic', Arial, sans-serif;	// default fonts;
+$headFont: 'Libre Baskerville', Arial, sans-serif;	// default fonts;
+$italicFont: 'Libre Baskerville Italic', Arial, sans-serif;	// default fonts;
+$specialFont: 'Engravers', Arial, sans-serif;	// default fonts;
+
+
+body,html{
+	font-family: $baseFont;
+	font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,h7{
+	font-family: $headFont;		
+	letter-spacing: -0.01em;
+	margin: 0 0 .5em;
+	line-height: 1.2em;
+}
+
+h1{ font-size: 2rem; }
+h2{ font-size: 1.6rem; }
+h3{ font-size: 1.4rem; }
+h4{ font-size: 1.25rem;}
+h5{ font-size: 1.25rem;}
+h6{ font-size: 1rem;}
+h7{ font-size: 1rem;}
+
+
+
+
+@include respond-to(xs){ 
+	
+	h1{ font-size: 1.75rem; }
+	h2{ font-size: 1.5rem; }
+	h3{ font-size: 1.25rem; }
+	h4{ font-size: 1.25rem;}
+	h5{ font-size: 1.25rem;}
+	h6{ font-size: 1rem;}
+	h7{ font-size: 1rem;}
+	
+}
+
+a, a:visited{
+	
+	color: $linkColor;	
+	text-decoration: $linkDecoration;
+	&:hover{
+		color: $linkHoverColor;
+		text-decoration: $linkHoverDecoration;
+	}
+
+}
+
+
+b,strong{
+	
+	font-weight: bold;
+}
+
+em{
+	font-family: $medFont;
+	font-weight: normal;
+}
+
+p{
+	font-size: 1em;	
+	line-heihgt: 1.2em;
+}
+
+.lead{
+	
+}
+
+sup{
+	font-size: 0.4em;
+	vertical-align: super;
+}
+
+small{
+	
+}
+
+blockquote{
+	padding: 10px 0px;
+	margin: 0 0 20px;
+	border-left: none;
+	font-size: 2rem;	
+	@include respond-to(sm){ font-size: 1.6rem; }
+	@include respond-to(xs){ font-size: 1.2rem; }
+	
+	p{
+		font-family: $medFont;
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.4em;
+			
+		
+		&:before {
+		  content: open-quote;
+		  font-size: 1em;
+		  line-height: 0.5em;
+		  margin-left: -0.5em;
+		 
+		}
+		
+		&:after {
+		  content: close-quote;
+		  font-size: 1em;
+		   margin-right: -0.5em;
+		  
+		}
+		
+		
+	}
+	
+	footer{
+		text-align: right;
+		font-size: 0.75em;
+		line-height: 1.4em;
+	}
+		
+	
+
+}
+
+

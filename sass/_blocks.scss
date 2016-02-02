@@ -1,0 +1,25 @@
+#block-simplenews-1{
+	
+	
+	@include fully($bb_grey_light,#000000,40px);
+	
+	#simplenews-block-form-1{
+		
+			}
+	
+	
+	
+	#edit-mail{
+		width: 400px;	
+	}
+	
+	.form-item-mail{
+		
+	}
+
+	#edit-submit{
+		
+		@extend .btn-primary;
+		
+	}	
+}

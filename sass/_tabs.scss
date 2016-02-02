@@ -1,0 +1,132 @@
+div.horizontal-tabs{
+	border: 0px;
+	
+}
+
+.horizontal-tabs ul.horizontal-tabs-list {
+	@extend .container;
+	
+	height: 95px;
+	
+	background: #fff;
+	border: none;
+	clear: both;
+	display: block;
+	
+	list-style: none outside none;
+	
+	position: relative;
+	border: none;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list li{
+	
+	@include make-xs-column(4);
+	@include make-sm-column(3);
+	@include make-md-column(2);
+	@include make-lg-column(2);
+			
+	background:transparent;
+	padding: 0px;
+	text-align: center;
+	
+	height: 105px;
+	
+	border: none;
+
+}
+.horizontal-tabs ul.horizontal-tabs-list li:hover{
+	background:transparent;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list li a,
+.horizontal-tabs ul.horizontal-tabs-list li.selected a{
+	background:#fff;
+	margin-bottom: 15px;
+	padding: 14px 0;
+	display: block;
+	
+	font-size: 1rem;
+	color: $bb_blue;
+	
+	
+}
+.horizontal-tabs ul.horizontal-tabs-list li a strong,
+.horizontal-tabs ul.horizontal-tabs-list li.selected a strong{
+	font-family: $medFont;
+	font-weight: normal !important;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list li a:hover{
+	background:#fff;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list li.selected{
+	background: url('../images/tab_arrow.png') no-repeat center bottom;
+}
+.horizontal-tabs ul.horizontal-tabs-list li.selected a{
+	
+	background-color: $bb_blue;
+	strong{	color: #fff; display: block;}
+}
+
+.horizontal-tab-button.selected a,
+.horizontal-tabs ul.horizontal-tabs-list .selected strong{ color:#00A8DF; }
+
+.horizontal-tabs-panes {
+	background: $bb_grey_light;
+	padding: 40px 0;
+}
+
+
+.horizontal-tabs-pane{
+	@extend .container;
+	border: 1px dotted pink;	
+	padding:0 !important;
+	background-color: transparent;
+}
+
+.panel-body{
+	background-color: transparent;
+	padding: 0;	
+}
+
+.panel{
+	
+	box-shadow: none;
+	background-color: transparent;
+}
+
+legend.panel-heading{
+	
+}
+
+.fieldset-legend{
+	
+}
+
+
+.horizontal-tab-button{
+	
+	a{
+		@extend %icon;
+		
+		&:before{
+			display: block;
+			font-size: 2rem;
+			
+		}
+	}
+	
+	&.selected a:before{
+		
+		color: #fff;
+	}
+	
+	
+	
+}
+
+.horizontal-tab-button-0 a { @extend %icon-person-add; }
+.horizontal-tab-button-1 a { @extend %icon-assignment; }
+.horizontal-tab-button-2 a { @extend %icon-location-on; }

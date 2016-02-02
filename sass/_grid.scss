@@ -1,0 +1,25 @@
+
+.vertical-align {
+  @include display-flex();
+  @include flex-direction(row);
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align >  {
+	
+  @include display-flex(inline-flex);
+  @include align-items(center);
+  @include justify-content(center);
+ 
+}
+
+
+[class^="col-"], [class*=" col-"]{
+	
+	@include respond-to(xs){
+		margin-bottom: 1em;
+	}
+	
+}
+
+

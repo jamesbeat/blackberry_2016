@@ -1,0 +1,333 @@
+@include font-face("icomoon", font-files("icomoon/icomoon.ttf", "icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.svg"));
+
+
+.icon, %icon, [class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	font-size: 1.4rem;
+	vertical-align: middle;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-account-balance:before, %icon-account-balance:before {
+	content: "\21";
+}
+.icon-account-box:before, %icon-account-box:before {
+	content: "\22";
+}
+.icon-account-child:before, %icon-account-child:before {
+	content: "\23";
+}
+.icon-account-circle:before, %icon-account-circle:before {
+	content: "\24";
+}
+.icon-alarm:before, %icon-alarm:before {
+	content: "\25";
+}
+.icon-announcement:before, %icon-announcement:before {
+	content: "\26";
+}
+.icon-assessment:before, %icon-assessment:before {
+	content: "\27";
+}
+.icon-assignment:before, %icon-assignment:before {
+	content: "\28";
+}
+.icon-assignment-ind:before, %icon-assignment-ind:before {
+	content: "\29";
+}
+.icon-assignment-late:before, %icon-assignment-late:before {
+	content: "\2a";
+}
+.icon-assignment-returned:before, %icon-assignment-returned:before {
+	content: "\2b";
+}
+.icon-assignment-turned-in:before, %icon-assignment-turned-in:before {
+	content: "\2c";
+}
+.icon-autorenew:before, %icon-autorenew:before {
+	content: "\2d";
+}
+.icon-bookmark:before, %icon-bookmark:before {
+	content: "\2e";
+}
+.icon-bookmark-outline:before, %icon-bookmark-outline:before {
+	content: "\2f";
+}
+.icon-cached:before, %icon-cached:before {
+	content: "\30";
+}
+.icon-description:before, %icon-description:before {
+	content: "\31";
+}
+.icon-done:before, %icon-done:before {
+	content: "\32";
+}
+.icon-event:before, %icon-event:before {
+	content: "\33";
+}
+.icon-exit-to-app:before, %icon-exit-to-app:before {
+	content: "\34";
+}
+.icon-explore:before, %icon-explore:before {
+	content: "\35";
+}
+.icon-find-in-page:before, %icon-find-in-page:before {
+	content: "\36";
+}
+.icon-get-app:before, %icon-get-app:before {
+	content: "\37";
+}
+.icon-grade:before, %icon-grade:before {
+	content: "\38";
+}
+.icon-help:before, %icon-help:before {
+	content: "\39";
+}
+.icon-highlight-remove:before, %icon-highlight-remove:before {
+	content: "\3a";
+}
+.icon-home:before, %icon-home:before {
+	content: "\3b";
+}
+.icon-https:before, %icon-https:before {
+	content: "\3c";
+}
+.icon-info:before, %icon-info:before {
+	content: "\3d";
+}
+.icon-info-outline:before, %icon-info-outline:before {
+	content: "\3e";
+}
+.icon-list:before, %icon-list:before {
+	content: "\3f";
+}
+.icon-lock:before, %icon-lock:before {
+	content: "\40";
+}
+.icon-lock-open:before, %icon-lock-open:before {
+	content: "\41";
+}
+.icon-lock-outline:before, %icon-lock-outline:before {
+	content: "\42";
+}
+.icon-note-add:before, %icon-note-add:before {
+	content: "\43";
+}
+.icon-open-in-browser:before, %icon-open-in-browser:before {
+	content: "\44";
+}
+.icon-open-in-new:before, %icon-open-in-new:before {
+	content: "\45";
+}
+.icon-open-with:before, %icon-open-with:before {
+	content: "\46";
+}
+.icon-pageview:before, %icon-pageview:before {
+	content: "\47";
+}
+.icon-perm-identity:before, %icon-perm-identity:before {
+	content: "\48";
+}
+.icon-print:before, %icon-print:before {
+	content: "\49";
+}
+.icon-query-builder:before, %icon-query-builder:before {
+	content: "\4a";
+}
+.icon-question-answer:before, %icon-question-answer:before {
+	content: "\4b";
+}
+.icon-reorder:before, %icon-reorder:before {
+	content: "\4c";
+}
+.icon-report-problem:before, %icon-report-problem:before {
+	content: "\4d";
+}
+.icon-room:before, %icon-room:before {
+	content: "\4e";
+}
+.icon-schedule:before, %icon-schedule:before {
+	content: "\4f";
+}
+.icon-search:before, %icon-search:before {
+	content: "\50";
+}
+.icon-settings:before, %icon-settings:before {
+	content: "\51";
+}
+.icon-system-update-tv:before, %icon-system-update-tv:before {
+	content: "\52";
+}
+.icon-trending-neutral:before, %icon-trending-neutral:before {
+	content: "\53";
+}
+.icon-verified-user:before, %icon-verified-user:before {
+	content: "\e600";
+}
+.icon-visibility:before, %icon-visibility:before {
+	content: "\54";
+}
+.icon-visibility-off:before, %icon-visibility-off:before {
+	content: "\55";
+}
+.icon-equalizer:before, %icon-equalizer:before {
+	content: "\56";
+}
+.icon-loop:before, %icon-loop:before {
+	content: "\57";
+}
+.icon-my-library-add:before, %icon-my-library-add:before {
+	content: "\58";
+}
+.icon-chat:before, %icon-chat:before {
+	content: "\59";
+}
+.icon-email:before, %icon-email:before {
+	content: "\5a";
+}
+.icon-location-on:before, %icon-location-on:before {
+	content: "\5b";
+}
+.icon-content-paste:before, %icon-content-paste:before {
+	content: "\5c";
+}
+.icon-drafts:before, %icon-drafts:before {
+	content: "\5d";
+}
+.icon-forward:before, %icon-forward:before {
+	content: "\5e";
+}
+.icon-insert-drive-file:before, %icon-insert-drive-file:before {
+	content: "\5f";
+}
+.icon-insert-photo:before, %icon-insert-photo:before {
+	content: "\61";
+}
+.icon-mode-edit:before, %icon-mode-edit:before {
+	content: "\62";
+}
+.icon-keyboard-arrow-down:before, %icon-keyboard-arrow-down:before {
+	content: "\e601";
+}
+.icon-keyboard-arrow-up:before, %icon-keyboard-arrow-up:before {
+	content: "\e602";
+}
+.icon-laptop:before, %icon-laptop:before {
+	content: "\63";
+}
+.icon-smartphone:before, %icon-smartphone:before {
+	content: "\64";
+}
+.icon-tablet-mac:before, %icon-tablet-mac:before {
+	content: "\65";
+}
+.icon-assistant-photo:before, %icon-assistant-photo:before {
+	content: "\66";
+}
+.icon-dehaze:before, %icon-dehaze:before {
+	content: "\67";
+}
+.icon-navigate-before:before, %icon-navigate-before:before {
+	content: "\68";
+}
+.icon-navigate-next:before, %icon-navigate-next:before {
+	content: "\69";
+}
+.icon-directions-bus:before, %icon-directions-bus:before {
+	content: "\e603";
+}
+.icon-directions-car:before, %icon-directions-car:before {
+	content: "\e604";
+}
+.icon-directions-subway:before, %icon-directions-subway:before {
+	content: "\e605";
+}
+.icon-directions-train:before, %icon-directions-train:before {
+	content: "\e606";
+}
+.icon-flight:before, %icon-flight:before {
+	content: "\e607";
+}
+.icon-local-restaurant:before, %icon-local-restaurant:before {
+	content: "\e608";
+}
+.icon-local-see:before, %icon-local-see:before {
+	content: "\6a";
+}
+.icon-apps:before, %icon-apps:before {
+	content: "\6b";
+}
+.icon-arrow-back:before, %icon-arrow-back:before {
+	content: "\6c";
+}
+.icon-arrow-forward:before, %icon-arrow-forward:before {
+	content: "\6d";
+}
+.icon-check:before, %icon-check:before {
+	content: "\6e";
+}
+.icon-close:before, %icon-close:before {
+	content: "\6f";
+}
+.icon-event-available:before, %icon-event-available:before {
+	content: "\70";
+}
+.icon-event-busy:before, %icon-event-busy:before {
+	content: "\71";
+}
+.icon-location-city:before, %icon-location-city:before {
+	content: "\e609";
+}
+.icon-people:before, %icon-people:before {
+	content: "\72";
+}
+.icon-people-outline:before, %icon-people-outline:before {
+	content: "\73";
+}
+.icon-person:before, %icon-person:before {
+	content: "\74";
+}
+.icon-person-add:before, %icon-person-add:before {
+	content: "\75";
+}
+.icon-person-outline:before, %icon-person-outline:before {
+	content: "\76";
+}
+.icon-publ:before, %icon-publ:before {
+	content: "\e60a";
+}
+.icon-school:before, %icon-school:before {
+	content: "\77";
+}
+.icon-share:before, %icon-share:before {
+	content: "\e60b";
+}
+.icon-check-box:before, %icon-check-box:before {
+	content: "\78";
+}
+.icon-check-box-outline-blank:before, %icon-check-box-outline-blank:before {
+	content: "\79";
+}
+.icon-radio-button-off:before, %icon-radio-button-off:before {
+	content: "\e60c";
+}
+.icon-radio-button-on:before, %icon-radio-button-on:before {
+	content: "\e60d";
+}
+.icon-star:before, %icon-star:before {
+	content: "\e60e";
+}
+.icon-star-outline:before, %icon-star-outline:before {
+	content: "\e60f";
+}

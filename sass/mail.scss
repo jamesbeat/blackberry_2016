@@ -1,0 +1,279 @@
+@import "vars";
+
+body.node-type-simplenews {
+	
+	.node-simplenews{
+		.content{
+			width: 600px;
+			margin: 40px auto;
+		}
+		.field-name-body{
+			background: #fff;
+		}
+	}
+		
+	#page{
+		background-color:$bb_grey_light;
+	}
+	
+	
+}
+
+
+body.htmlmail, .node-simplenews{
+	
+	background-color:$bb_grey_light;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: $bb_grey_dark;
+	
+	a, a:visited{
+		color: $linkColor;	
+		text-decoration: $linkDecoration;
+		&:hover{ color: $linkHoverColor; text-decoration:$linkHoverDecoration;} 	
+
+	}
+		
+	p, .strong{
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+		color: $bb_grey_dark;
+		line-height: 20px;
+		text-align: left;
+	}	
+	.strong{
+		font-weight: bold;
+	}
+	
+	hr{
+		height: 0px;
+		border: none;
+		border-top: 1px solid $bb_grey_light;
+	}
+	
+	h1,h2,h3,h4,h5{
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		margin-top: 0px;
+		padding-top: 0px;
+		text-align: left;
+	}
+	
+	h1{ 
+		font-size: 22px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+	h2{
+		font-size: 18px;
+		line-height: 20px;
+	}
+	h3{
+		font-size: 16px;
+		line-height: 18px;
+	}
+	
+	ul{
+		
+		font-family: Arial, sans-serif;
+		font-size: 15px;
+		color: $bb_grey_dark;
+		padding-left: 16px;
+		text-align: left;
+		
+		li{
+			line-height: 16px;
+			margin: 10px 0;
+			
+			
+		}
+	}
+	
+		
+	#mail_head_band{
+	
+		padding-top: 20px;
+		padding-bottom: 5px;
+		font-size: 10px;
+		
+		.htmlmail-welcome{ 
+			color: $bb_grey_medium;
+			padding-left: 6px;
+			text-align: right; 
+			p{ font-size: 10px; margin: 0; padding: 0;}	
+		}
+		.htmlmail-simplenews-link{ 
+			text-align: right; 
+			color:$bb_grey_medium; 
+			padding-right: 6px;
+			p{ font-size: 10px; margin: 0; padding: 0; text-align: right; }	
+		}
+	}
+		
+	
+	
+	
+	.body-table{
+		background-color: #ffffff;
+		padding-bottom: 40px;
+	}
+	
+	.default-td{
+		width: 100%;
+		padding: 40px 30px 0px 30px;
+		
+	}
+	
+	.full-td{
+		width: 100%;
+		padding: 20px 20px 0px 20px;
+	}
+			
+	.no_top_padding{
+		padding-top: 0px;
+	}
+	
+	.bottom_padding{
+		
+		padding-bottom: 40px;
+	}
+	
+	
+	.equal-table{
+		
+		td{
+			width: 50%;
+			vertical-align: top;
+			padding: 0px 20px;
+		}
+		
+	}
+
+	table.agenda-table,
+	table.date-table{
+		width: 100%;
+		
+		border-bottom: 1px solid $bb_grey_light;
+		
+		th,td{
+			font-family: Arial, sans-serif;
+			font-size: 15px;
+			color: $bb_grey_dark;
+			border-top: 1px solid $bb_grey_light;
+			padding: 6px 0 6px;
+			text-align: left;
+		}
+		th{
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+	}
+
+	table.agenda-table{
+		
+	}
+	
+	table.date-table{
+		
+	}
+	
+	.date-note{
+		padding-top: 5px;
+		font-size: 15px;	
+		
+	}
+	
+	.bullet-table td, .bullet-table th{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height: 18px;
+        color:#505050;
+        padding: 4px 0px;
+    }
+        
+    .bull_th{
+	    width: 3%; 
+	    text-lign: left;
+	    vertical-align: top;
+    }
+    
+    .bull_td{
+	    width: 80%; 
+	    text-lign: left;
+	    vertical-align: top;
+    }
+    
+    
+	.grid_ruler{
+	    padding: 10px 40px 10px 40px;
+	    
+	 }
+	 
+	 .grid_mini{
+		        padding: 10px 40px 10px 40px;
+	        }
+    
+    .ruler{
+        margin: 0px;
+        padding: 0;
+        border-top: 1px solid $bb_grey_light;
+        height: 1px;
+    }	 
+
+	
+	.button{
+		        font-size: 16px;
+		        font-family: Helvetica, Arial, sans-serif;
+		        color: #ffffff;
+		        text-decoration: none;
+		        padding: 18px 24px; 
+				
+				display: inline-block;
+	}
+	
+	.button:hover{
+		     
+		color: #ffffff;
+		text-decoration: none;
+		
+		        
+	}
+	
+	table.belt-table{
+		width: auto;
+		margin: 0;
+		text-align: left;
+		padding: 8px 0px;
+		
+	}
+	table.belt-table td{
+		
+	}
+	table.belt-table td img{
+		padding: 5px 20px 5px 0; 
+	}
+
+    #footer{
+    }
+    #footer p{
+        color: #989A9B;
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+table.belt-table{
+				
+		text-align: left;
+					
+		td{
+			
+			img{
+				padding: 5px 20px 5px 0;
+			}
+			
+		}
+		
+}

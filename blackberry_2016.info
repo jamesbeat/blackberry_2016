@@ -1,0 +1,28 @@
+name = BlackBerry 2016
+description = BlackBerry Theme for 2016.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[drawer_left]    = 'Drawer Left'
+regions[drawer_right]   = 'Drawer Right'
+regions[navi]     		= 'Navi'
+regions[calltoaction]	= 'Call to Action'
+regions[stage]     		= 'Stage'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[footer]         = 'Footer'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/mail.css
+

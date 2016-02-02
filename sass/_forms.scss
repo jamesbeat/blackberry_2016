@@ -1,0 +1,179 @@
+//from fields 
+
+#registration-form{
+	
+	fieldset{
+		background-color: #fff;
+		border-radius: 0;
+		border: none;
+	}
+	
+	.fieldset-legend{
+		display: block;
+			
+	}
+	
+	.panel-heading{
+		border: 0;
+		background-color: transparent !important;
+		
+		
+	
+	}
+	
+	.panel-title{
+		letter-spacing: -0.01em;
+		margin: 0 0 .5em;
+		line-height: 1.2em;
+		font-size: 1.5rem !important; 
+		padding: 4px 0 8px 0;
+		border-bottom: 2px solid $bb_grey_light;
+		
+	}
+	
+	.panel-body{
+		margin-top: 15px;	
+		margin-bottom: 15px;
+	}
+	
+	.form-control{
+		width: auto;	
+	}
+	
+	.checkbox{
+		padding-left: 0px;
+		 input[type="checkbox"]{
+			padding-left: 0px;
+			margin-left: 0px;
+		}
+
+	}
+	
+	.form-type-checkbox{
+		p{font-size: 0.9rem;
+			margin-left: 20px;
+		}
+	}
+	
+	.field-name-field-anrede{
+		
+		@include make-md-column(12);
+		
+		.form-item-field-anrede-und{
+					
+			label{@include make-md-column(2); padding-left: 0px;}
+			select{@include make-md-column(3);}
+		}
+	}
+	.field-name-field-vorname{	@include make-md-column(6);}
+	.field-name-field-nachname{	@include make-md-column(6);}
+	.field-name-field-firmenname{ @include make-md-column(6);}
+	.field-name-field-position{ @include make-md-column(6);}
+	
+	.form-item-anon-mail{ @include make-md-column(12);}
+	.field-name-field-telefon{ @include make-md-column(6);}
+	.field-name-field-mobil{ @include make-md-column(6);}
+	
+	.field-name-field-strasse{ @include make-md-column(12);}
+	.field-name-field-plz{ @include make-md-column(6);}
+	.field-name-field-ort{ @include make-md-column(6);}
+	
+	.field-name-field-datenschutz { @include make-md-column(12);}
+	
+	//.form-item-field-datenschutz-und label{ display: none;}
+	
+	.field-name-field-watchdox{ @include make-md-column(12);}
+	
+	
+	
+	p.help-block{
+		font-size: 1rem;	
+	}
+	
+	#edit-cancel{
+		display: none;
+	}
+	
+	#edit-submit{
+		@extend .btn-primary;	
+	}
+	
+	.form-actions{
+		margin-bottom: 40px;
+	}
+	
+	.group-contents{
+		
+		background: #fff url('../images/watchdox_s.gif') no-repeat top right;
+		
+	}
+}
+
+.webform-component-fieldset{
+	
+	
+	.panel-body{
+		padding: 16px;	
+	}
+	
+	div.fivestar-widget .star {
+		width: 20px;
+		height: 20px;
+	}
+	
+	div.fivestar-widget div.on a {
+	  background-position: 0 -20px; /* RTL */
+	}
+	div.fivestar-widget div.hover a, div.rating div a:hover {
+	  background-position: 0 -40px; /* RTL */
+	}
+
+	div.fivestar-widget {
+	 padding-top:4px;
+	 padding-bottom: 20px;
+	}
+}
+
+
+body.page-protected-node{
+	
+	.page-header:after{
+		@extend .icon;
+		content: "\40";
+		text-align: right;
+		float: right;
+		font-size: 2rem;
+		
+	}
+}
+
+#protected-node-enterpassword{
+	
+	fieldset{
+		border: 0;
+		padding: 0;
+	
+	}
+	p.help-block{
+		font-size: 1rem;
+		
+	}
+	.form-type-password{
+		width: 50%;
+	}
+	
+	#edit-password{
+		font-size: 1.5rem;
+		font-family: $specialFont;
+		border-radius: 0;
+		height: auto;
+		margin-bottom: 1em;
+	}
+	
+	#edit-submit{
+		
+		@extend .btn-primary;
+		@extend .btn-sm;
+		margin-right: 20px !important;
+	}
+}
